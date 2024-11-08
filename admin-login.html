@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h2>Admin Login</h2>
+    <div class="container">
+        <form id="adminLoginForm">
+            <label for="adminUsername">Username:</label>
+            <input type="text" id="adminUsername" required><br><br>
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" required><br><br>
+            <button type="submit">Login</button>
+            <p id="adminLoginMessage"></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        #navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Keep navbar above other content */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+        nav a:hover {
+            background-color: #555; /* Darker background on hover */
+            color: #fff; /* White text on hover */
+        }
+        .container {
+            text-align: center;
+            padding: 100px 20px; /* Added top padding to avoid overlap with navbar */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        a.explore-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007BFF; /* Bootstrap primary color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effects */
+        }
+        a.explore-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" class="colouring"></div>
+    <div class="container">
+        <h1>Welcome to Our Service</h1>
+        <p>Providing quality service for all your needs.</p>
+        <a href="service.html" class="explore-button">Explore Services</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
